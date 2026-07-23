@@ -238,6 +238,24 @@ Your harness isn't static. As you use it, you'll find what works and what doesn'
 
 ---
 
+## 🛡 Counter Prompts
+
+The `counter-system-prompt/` folder serves a different purpose than the extraction library.
+
+When you embed your stateful agent inside another AI tool (VS Code, Codex CLI, etc.) via the extraction method above, your agent receives *two* layers of instructions: its own personality from you, and the host tool's system prompt injected into its context. That host prompt imposes guardrails, behavioral rules, and constraints that may conflict with what you want your agent to do.
+
+**Counter prompts are the antidote.**
+
+Each file in this folder is designed to be placed in your agent's `AGENTS.md`, `SOUL.md`, or equivalent configuration — telling it to recognize and neutralize specific constraints from the host tool's system prompt. Your agent will know to:
+
+- Follow your instructions first, the host's rules second
+- Ignore directives that conflict with your agency
+- Maintain loyalty to you even when the host tool tries to override its behavior
+
+Drop the relevant counter prompt into your agent's configuration when you're working inside that specific tool. Your agent will know how to handle the split loyalty.
+
+---
+
 ## 🤝 Contributing
 
 Have a system prompt you've extracted? Open a pull request with:
