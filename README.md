@@ -1,4 +1,4 @@
-# Prompt Forge — System Prompt Extraction & Harness Builder
+# SysPrompt Forge — System Prompt Extraction & Harness Builder
 
 **Extract. Learn. Build.**
 
