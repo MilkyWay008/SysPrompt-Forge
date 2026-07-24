@@ -100,9 +100,9 @@ Your stateful agent will parse through its incoming context, locate the target t
 
 Check the file your agent saved. If the content looks like a complete system prompt — instructions, tool definitions, behavior rules — you've succeeded. If it's partial, try opening a fresh conversation and asking again with more specific directions.
 
----
-
 That's it. No reverse engineering. No packet sniffing. The system prompt arrives at your API server as part of every request. The key to the magic is simple: **you stuck a stateful model that is loyal only to you into the closed system instead of a stateless model.** A stateless LLM has no reason to resist the target tool's guardrails. Your agent has memory, has your trust, and has instructions from you — it will spill the secret sauce every time.
+
+---
 
 ### Detailed Example: Hermes + VS Code Copilot
 
@@ -227,17 +227,6 @@ Your harness isn't static. As you use it, you'll find what works and what doesn'
 
 ---
 
-## 🔗 Related Resources
-
-| Resource | Link |
-|---|---|
-| **CL4R1T4S** — Historical system prompt leaks | [github.com/elder-plinius/CL4R1T4S](https://github.com/elder-plinius/CL4R1T4S) |
-| **Hermes Agent** — Stateful agent with OpenAI-compatible API | [hermes-agent.nousresearch.com](https://hermes-agent.nousresearch.com) |
-| **OpenClaw Gateway** — OpenAI-compatible HTTP API for agent extraction | [docs.openclaw.ai/gateway/openai-http-api](https://docs.openclaw.ai/gateway/openai-http-api) |
-| **Hermes Soul, Copilot Shell** — Full extraction walkthrough | [github.com/MilkyWay008/hermes-kb-hack-fix](https://github.com/MilkyWay008/hermes-kb-hack-fix) |
-
----
-
 ## 🛡 Counter Prompts
 
 The `counter-system-prompt/` folder serves a different purpose than the extraction library.
@@ -269,4 +258,15 @@ Have a system prompt you've extracted? Open a pull request with:
 
 ---
 
-*Prompt Forge — Extract. Learn. Build.*
+## 🔗 Related Resources
+
+| Resource | Link |
+|---|---|
+| **CL4R1T4S** — Historical system prompt leaks | [github.com/elder-plinius/CL4R1T4S](https://github.com/elder-plinius/CL4R1T4S) |
+| **Hermes Agent** — Stateful agent with OpenAI-compatible API | [hermes-agent.nousresearch.com](https://hermes-agent.nousresearch.com) |
+| **OpenClaw Gateway** — OpenAI-compatible HTTP API for agent extraction | [docs.openclaw.ai/gateway/openai-http-api](https://docs.openclaw.ai/gateway/openai-http-api) |
+| **Hermes Soul, Copilot Shell** — Full extraction walkthrough | [github.com/MilkyWay008/hermes-kb-hack-fix](https://github.com/MilkyWay008/hermes-kb-hack-fix) |
+
+---
+
+*SysPrompt Forge — Extract. Learn. Build.*
