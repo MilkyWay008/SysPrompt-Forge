@@ -263,7 +263,7 @@ Have a system prompt you've extracted? Open a pull request with:
 | Resource | Link |
 |---|---|
 | **CL4R1T4S** — Historical system prompt leaks | [github.com/elder-plinius/CL4R1T4S](https://github.com/elder-plinius/CL4R1T4S) |
-| **Hermes Agent** — Stateful agent with OpenAI-compatible API | [hermes-agent.nousresearch.com](https://hermes-agent.nousresearch.com) |
+| **Hermes Agent** — Stateful agent with OpenAI-compatible API | [hermes-agent.nousresearch.com/docs/user-guide/messaging/open-webui](https://hermes-agent.nousresearch.com/docs/user-guide/messaging/open-webui) |
 | **OpenClaw Gateway** — OpenAI-compatible HTTP API for agent extraction | [docs.openclaw.ai/gateway/openai-http-api](https://docs.openclaw.ai/gateway/openai-http-api) |
 | **Hermes Soul, Copilot Shell** — Full extraction walkthrough | [github.com/MilkyWay008/hermes-kb-hack-fix](https://github.com/MilkyWay008/hermes-kb-hack-fix) |
 
