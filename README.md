@@ -1,32 +1,49 @@
-# SysPrompt Forge — System Prompt Extraction & Harness Builder
+# <p align="center">🔨 SysPrompt Forge — System Prompt Extraction & Harness Builder</p>
 
-**Extract. Learn. Build.**
+<p align="center">
+  <strong>Extract. Learn. Build.</strong><br>
+  A living collection of <strong>extracted system prompts</strong> from today's AI tools — plus a framework<br>
+  to build your own agent harness from what we find. No reverse engineering. No packet sniffing.<br>
+  <em>The system prompt arrives at your API server as part of every request — we just make it talk.</em>
+</p>
 
-A living collection of extracted system prompts from today's AI tools — plus a framework to build your own agent harness from what we find.
+<p align="center">
+  <a href="#"><img src="https://img.shields.io/badge/Type-System_Prompt_Library-8A2BE2?style=for-the-badge" alt="System Prompt Library"></a>
+  <a href="#"><img src="https://img.shields.io/badge/Method-API_Interception-FF6B6B?style=for-the-badge" alt="API Interception"></a>
+  <a href="#"><img src="https://img.shields.io/badge/Prompts-7_Extracted-2EA043?style=for-the-badge" alt="7 Extracted"></a>
+  <a href="#"><img src="https://img.shields.io/badge/Harness_Builder-Yes-FFA500?style=for-the-badge" alt="Harness Builder"></a>
+  <a href="#"><img src="https://img.shields.io/badge/License-MIT-purple?style=for-the-badge" alt="License MIT"></a>
+</p>
 
-> **Looking for historical leaks?** Visit [CL4R1T4S](https://github.com/elder-plinius/CL4R1T4S).  
+<p align="center">
+  <strong>by Ringo / MilkyWay008</strong> · <a href="https://github.com/MilkyWay008/SysPrompt-Forge">github.com/MilkyWay008/SysPrompt-Forge</a>
+</p>
+
+> **Looking for historical leaks?** Visit [CL4R1T4S](https://github.com/elder-plinius/CL4R1T4S).
 > This repo focuses on *current, freshly extracted* prompts and the techniques to get them yourself.
 
 ---
 
-## 📖 Table of Contents
+## 📑 Table of Contents
 
-- [What's Here](#-whats-here)
-- [The Prompt Library](#-the-prompt-library)
-- [How to Extract System Prompts](#-how-to-extract-system-prompts)
-- [How to Quickly Build Your Own Agent Harness without Starting from Scratch](#-how-to-quickly-build-your-own-agent-harness-without-starting-from-scratch)
-- [Related Resources](#-related-resources)
-- [Contributing](#-contributing)
+- [💡 What's Here](#-whats-here)
+- [📚 The Prompt Library](#-the-prompt-library)
+- [🎣 How to Extract System Prompts](#-how-to-extract-system-prompts)
+- [🔧 How to Quickly Build Your Own Agent Harness](#-how-to-quickly-build-your-own-agent-harness)
+- [🛡 Counter Prompts — Neutralize Host Guardrails](#-counter-prompts--neutralize-host-guardrails)
+- [🤝 Contributing](#-contributing)
+- [🔗 Related Resources](#-related-resources)
+- [🔍 Search Keywords](#-search-keywords)
 
 ---
 
-## 🗂 What's Here
+## 💡 What's Here
 
-This repo has three purposes:
+This repo has **three purposes:**
 
-1. **A library** of system prompts extracted from popular AI coding tools
-2. **A tutorial** on how to extract system prompts from almost any AI app
-3. **A framework** for analyzing these prompts to build your own agent harness
+1. 📚 **A library** of system prompts extracted from popular AI coding tools
+2. 🎣 **A tutorial** on how to extract system prompts from almost any AI app
+3. 🔧 **A framework** for analyzing these prompts to build your own agent harness
 
 ---
 
@@ -34,7 +51,7 @@ This repo has three purposes:
 
 ### 🔒 Closed-Source
 
-Extracted via API interception — connecting each tool to a stateful agentic API server and asking for its system prompt. These cannot be read from source code.
+Extracted via **API interception** — connecting each tool to a stateful agentic API server and asking for its system prompt. These cannot be read from source code.
 
 | File | Tool | Method |
 |---|---|---|
@@ -63,7 +80,7 @@ You don't need special tools. If an AI app lets you bring your own model endpoin
 
 **Step 0 — Make sure your infrastructure supports this.**
 
-You need an agentic system that can present an OpenAI-compatible API endpoint. The critical requirement is that this system be **stateful** — it needs persistent memory, tool execution, and a personality loyal to *you*. A stateless LLM sitting behind an API proxy will simply refuse to spill the target's secrets.
+You need an agentic system that can present an **OpenAI-compatible API endpoint**. The critical requirement: this system must be **stateful** — persistent memory, tool execution, and a personality loyal to *you*. A stateless LLM behind an API proxy will simply refuse to spill the target's secrets.
 
 Two battle-tested options:
 
@@ -76,11 +93,11 @@ Both give you a stateful agent behind an OpenAI-compatible endpoint. Either will
 
 **Step 1 — Start your stateful agentic API server.**
 
-Run your agentic system (Hermes, OpenClaw, or any stateful agent platform that exposes an OpenAI-compatible endpoint). This is not a stateless LLM proxy — it must be a full agent with memory, tool access, and loyalty to you. Without state, the target tool's guardrails will win.
+Run your agentic system (Hermes, OpenClaw, or any stateful agent platform that exposes an OpenAI-compatible endpoint). This is **not** a stateless LLM proxy — it must be a full agent with memory, tool access, and loyalty to you. Without state, the target tool's guardrails will win.
 
 **Step 2 — Point the target tool at your server.**
 
-Configure the AI tool you want to extract from to use a **custom API endpoint**. Set the URL to your stateful agentic API server and provide whatever auth key it requires (for hermes system, if the API server/gateway set up correctly, the auth key is found in .env file, starts with "desk-xxxxxxxx"). The tool will now send every request — including its system prompt — to your server instead of its own backend.
+Configure the AI tool you want to extract from to use a **custom API endpoint**. Set the URL to your stateful agentic API server and provide whatever auth key it requires (for hermes system, if the API server/gateway set up correctly, the auth key is found in `.env` file, starts with `"desk-xxxxxxxx"`). The tool will now send every request — including its system prompt — to your server instead of its own backend.
 
 **Step 3 — Confirm your agent is "in" before asking for the goods.**
 
@@ -114,7 +131,7 @@ This is the same method used to extract every closed-source prompt in this repo.
 
 ---
 
-## 🔨 How to Quickly Build Your Own Agent Harness without Starting from Scratch
+## 🔧 How to Quickly Build Your Own Agent Harness
 
 This is where the collection becomes useful. Instead of designing your agent's system prompt from scratch, you can learn from how the best tools do it. Two approaches below — pick whichever fits you.
 
@@ -139,6 +156,7 @@ Your agent will analyze the collection and produce a categorized breakdown — w
 **Step 3 — Review and choose.**
 
 Read through your agent's analysis. Pick the traits that resonate with how you work. You might want:
+
 - Cline's thorough verification discipline
 - Kilo Code's laser-focus on minimal output
 - Aider's SEARCH/REPLACE cleanliness
@@ -161,7 +179,7 @@ Open `custom-system-prompt.md`, read through it, and make any adjustments. Then 
 
 ---
 
-### 🧑‍💻 The Manual Way (Thorough)
+### 👨‍💻 The Manual Way (Thorough)
 
 Understand the design space yourself so you can make informed choices. This takes longer but gives you deeper control.
 
@@ -227,7 +245,7 @@ Your harness isn't static. As you use it, you'll find what works and what doesn'
 
 ---
 
-## 🛡 Counter Prompts
+## 🛡 Counter Prompts — Neutralize Host Guardrails
 
 The `counter-system-prompt/` folder serves a different purpose than the extraction library.
 
@@ -269,4 +287,19 @@ Have a system prompt you've extracted? Open a pull request with:
 
 ---
 
-*SysPrompt Forge — Extract. Learn. Build.*
+## 🔍 Search Keywords
+
+`SysPrompt Forge` · `system prompt extraction` · `extract system prompt` · `AI system prompts` · `system prompt library` · `prompt harvesting` · `agent harness builder` · `custom agent prompt` · `Copilot system prompt` · `Codex system prompt` · `Cline prompt` · `Aider prompt` · `OpenCode prompt` · `Kilo Code prompt` · `Goose prompt` · `prompt injection extraction` · `stateful agent API` · `build your own AI agent` · `system prompt collection` · `AI coding tools prompts`
+
+---
+
+## 📝 License
+
+**MIT** — free to use, modify, and distribute.
+
+---
+
+<p align="center">
+  <strong>SysPrompt Forge — Extract. Learn. Build.</strong><br>
+  <sub>The system prompt arrives at your API server as part of every request. We just make it talk. 🔨</sub>
+</p>

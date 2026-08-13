@@ -2,3 +2,4 @@
 .temp/
 .bkup/
 counter-system-prompt/
+*.bak-*
