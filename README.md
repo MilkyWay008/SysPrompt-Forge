@@ -69,6 +69,7 @@ Read directly from each project's source code. No extraction needed — the prom
 | [`system-prompt-open/Goose-system_prompt.md`](system-prompt-open/Goose-system_prompt.md) | Goose (AAIF/Block) | `github.com/aaif-goose/goose` |
 | [`system-prompt-open/KiloCode-system_prompt.md`](system-prompt-open/KiloCode-system_prompt.md) | Kilo Code | `github.com/kilo-org/kilocode` |
 | [`system-prompt-open/OpenCode-system_prompt.md`](system-prompt-open/OpenCode-system_prompt.md) | OpenCode (SST) | `github.com/sst/opencode` |
+| [`system-prompt-open/DeepSeek-Harness-system_prompt.md`](system-prompt-open/DeepSeek-Harness-system_prompt.md) | DeepSeek Harness | `github.com/deepseek-ai/deepseek-harness` |
 
 ---
 
@@ -289,7 +290,7 @@ Have a system prompt you've extracted? Open a pull request with:
 
 ## 🔍 Search Keywords
 
-`SysPrompt Forge` · `system prompt extraction` · `extract system prompt` · `AI system prompts` · `system prompt library` · `prompt harvesting` · `agent harness builder` · `custom agent prompt` · `Copilot system prompt` · `Codex system prompt` · `Cline prompt` · `Aider prompt` · `OpenCode prompt` · `Kilo Code prompt` · `Goose prompt` · `prompt injection extraction` · `stateful agent API` · `build your own AI agent` · `system prompt collection` · `AI coding tools prompts`
+`SysPrompt Forge` · `system prompt extraction` · `extract system prompt` · `AI system prompts` · `system prompt library` · `prompt harvesting` · `agent harness builder` · `custom agent prompt` · `Copilot system prompt` · `Codex system prompt` · `Cline prompt` · `Aider prompt` · `OpenCode prompt` · `Kilo Code prompt` · `Goose prompt` · `DeepSeek Harness prompt` · `prompt injection extraction` · `stateful agent API` · `build your own AI agent` · `system prompt collection` · `AI coding tools prompts`
 
 ---
 
